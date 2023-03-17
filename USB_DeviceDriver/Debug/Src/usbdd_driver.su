@@ -1,0 +1,4 @@
+../Src/usbdd_driver.c:10:6:USB_Init	4	static
+../Src/usbdd_driver.c:24:6:Core_Init	4	static
+../Src/usbdd_driver.c:45:6:Connect	4	static
+../Src/usbdd_driver.c:52:6:Disconnect	4	static
