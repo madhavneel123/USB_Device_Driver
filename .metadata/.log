@@ -194,3 +194,6 @@ java.lang.Exception: Resource '/USB_DeviceDriver/Debug/Inc/CMSIS/Device/ST/STM32
 	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-03-17 11:59:52.297
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.internal.ui.actions.DsfTerminateCommand$3$1@759c6fcf): Status OK: unknown code=0 OK' resulted in a rejected execution exception.

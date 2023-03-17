@@ -6,16 +6,19 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Src/main.c \
+../Src/systeminit.c \
 ../Src/usbdd_driver.c \
 ../Src/usbdd_framework.c 
 
 OBJS += \
 ./Src/main.o \
+./Src/systeminit.o \
 ./Src/usbdd_driver.o \
 ./Src/usbdd_framework.o 
 
 C_DEPS += \
 ./Src/main.d \
+./Src/systeminit.d \
 ./Src/usbdd_driver.d \
 ./Src/usbdd_framework.d 
 
@@ -27,7 +30,7 @@ Src/%.o Src/%.su: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/main.d ./Src/main.o ./Src/main.su ./Src/usbdd_driver.d ./Src/usbdd_driver.o ./Src/usbdd_driver.su ./Src/usbdd_framework.d ./Src/usbdd_framework.o ./Src/usbdd_framework.su
+	-$(RM) ./Src/main.d ./Src/main.o ./Src/main.su ./Src/systeminit.d ./Src/systeminit.o ./Src/systeminit.su ./Src/usbdd_driver.d ./Src/usbdd_driver.o ./Src/usbdd_driver.su ./Src/usbdd_framework.d ./Src/usbdd_framework.o ./Src/usbdd_framework.su
 
 .PHONY: clean-Src
 

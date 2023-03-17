@@ -1,4 +1,5 @@
 "./Src/main.o"
+"./Src/systeminit.o"
 "./Src/usbdd_driver.o"
 "./Src/usbdd_framework.o"
 "./Startup/startup_stm32f446retx.o"

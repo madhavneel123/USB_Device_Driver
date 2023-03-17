@@ -1,23 +1,28 @@
-09:23:11 **** Clean-only build of configuration Debug for project USB_DeviceDriver ****
-make -j4 clean 
-rm -rf ./Startup/startup_stm32f446retx.d ./Startup/startup_stm32f446retx.o
-rm -rf ./Src/main.d ./Src/main.o ./Src/main.su ./Src/usbdd_driver.d ./Src/usbdd_driver.o ./Src/usbdd_driver.su ./Src/usbdd_framework.d ./Src/usbdd_framework.o ./Src/usbdd_framework.su
-rm -rf USB_DeviceDriver.elf USB_DeviceDriver.list USB_DeviceDriver.map default.size.stdout
- 
-09:23:12 **** Build of configuration Debug for project USB_DeviceDriver ****
+12:12:31 **** Incremental Build of configuration Debug for project USB_DeviceDriver ****
 make -j4 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f446retx.d" -MT"Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f446retx.o" "../Startup/startup_stm32f446retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Users/salil madhav/Desktop/Projects/USB Device Driver/USB_DeviceDriver/Inc/CMSIS/Include" -I"C:/Users/salil madhav/Desktop/Projects/USB Device Driver/USB_DeviceDriver/Inc/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/usbdd_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Users/salil madhav/Desktop/Projects/USB Device Driver/USB_DeviceDriver/Inc/CMSIS/Include" -I"C:/Users/salil madhav/Desktop/Projects/USB Device Driver/USB_DeviceDriver/Inc/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/usbdd_driver.d" -MT"Src/usbdd_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/usbdd_driver.o"
-arm-none-eabi-gcc "../Src/usbdd_framework.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Users/salil madhav/Desktop/Projects/USB Device Driver/USB_DeviceDriver/Inc/CMSIS/Include" -I"C:/Users/salil madhav/Desktop/Projects/USB Device Driver/USB_DeviceDriver/Inc/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/usbdd_framework.d" -MT"Src/usbdd_framework.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/usbdd_framework.o"
+arm-none-eabi-gcc "../Src/systeminit.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Users/salil madhav/Desktop/Projects/USB Device Driver/USB_DeviceDriver/Inc/CMSIS/Include" -I"C:/Users/salil madhav/Desktop/Projects/USB Device Driver/USB_DeviceDriver/Inc/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/systeminit.d" -MT"Src/systeminit.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/systeminit.o"
 arm-none-eabi-gcc -o "USB_DeviceDriver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\salil madhav\Desktop\Projects\USB Device Driver\USB_DeviceDriver\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USB_DeviceDriver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: USB_DeviceDriver.elf
  
 arm-none-eabi-size   USB_DeviceDriver.elf 
 arm-none-eabi-objdump -h -S  USB_DeviceDriver.elf  > "USB_DeviceDriver.list"
    text	   data	    bss	    dec	    hex	filename
-    932	      8	   1568	   2508	    9cc	USB_DeviceDriver.elf
+    904	      8	   1568	   2480	    9b0	USB_DeviceDriver.elf
 Finished building: default.size.stdout
  
 Finished building: USB_DeviceDriver.list
+ 
+12:12:42 **** Incremental Build of configuration Debug for project USB_DeviceDriver ****
+make -j4 all 
+arm-none-eabi-size   USB_DeviceDriver.elf 
+   text	   data	    bss	    dec	    hex	filename
+    904	      8	   1568	   2480	    9b0	USB_DeviceDriver.elf
+Finished building: default.size.stdout
+ 
+12:12:57 **** Incremental Build of configuration Debug for project USB_DeviceDriver ****
+make -j4 all 
+arm-none-eabi-size   USB_DeviceDriver.elf 
+   text	   data	    bss	    dec	    hex	filename
+    904	      8	   1568	   2480	    9b0	USB_DeviceDriver.elf
+Finished building: default.size.stdout
  
